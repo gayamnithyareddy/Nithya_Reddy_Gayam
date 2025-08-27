@@ -273,34 +273,58 @@ section{
     width:100%;
 
 }
-/* Rainfall Effect */
-.rain {
+/* Fireworks / Crackers Effect */
+.fireworks {
   position: fixed;
   top: 0;
   left: 0;
-  width: 2px;
-  height: 20px;
-  background: rgba(255, 255, 255, 0.6);
-  animation: fall 0.7s linear infinite;
-  box-shadow: 
-    20px -100px rgba(255,255,255,0.5),
-    60px -150px rgba(255,255,255,0.5),
-    120px -200px rgba(255,255,255,0.6),
-    180px -250px rgba(255,255,255,0.4),
-    240px -300px rgba(255,255,255,0.7),
-    300px -350px rgba(255,255,255,0.5),
-    360px -400px rgba(255,255,255,0.6),
-    420px -450px rgba(255,255,255,0.4),
-    480px -500px rgba(255,255,255,0.7),
-    540px -550px rgba(255,255,255,0.5),
-    600px -600px rgba(255,255,255,0.6),
-    660px -650px rgba(255,255,255,0.7),
-    720px -700px rgba(255,255,255,0.5),
-    780px -750px rgba(255,255,255,0.6),
-    840px -800px rgba(255,255,255,0.4),
-    900px -850px rgba(255,255,255,0.7);
-  z-index: 0; /* keep behind content */
+  width: 100%;
+  height: 100%;
   pointer-events: none;
+  z-index: 0; /* keep behind portfolio content */
+  background: transparent;
+}
+
+.fireworks::before,
+.fireworks::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow:
+    0 0 #ff0,
+    30px 0 #f00,
+    -30px 0 #0ff,
+    0 30px #0f0,
+    0 -30px #f0f,
+    20px 20px #ff4500,
+    -20px -20px #1e90ff,
+    25px -25px #ff1493,
+    -25px 25px #00ffff;
+  animation: explode 1.5s infinite ease-in-out;
+}
+
+.fireworks::after {
+  animation-delay: 0.75s;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
 }
 
 @keyframes fall {
@@ -1502,4 +1526,5 @@ section {
     padding:2rem 4%;
   }
 }
+
 
