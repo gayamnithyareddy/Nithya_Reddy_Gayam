@@ -273,55 +273,45 @@ section{
     width:100%;
 
 }
-/* 🎆 Fireworks Sparks Effect */
-.firework {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 5px;
-  height: 5px;
-  background: transparent;
+/* Falling Colourful Stars Effect */
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 3px;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
-  animation: explode 1.2s ease-out infinite;
+  background: white;
+  box-shadow: 
+    50px -100px gold,
+    120px -200px deepskyblue,
+    200px -300px violet,
+    300px -150px lime,
+    400px -250px hotpink,
+    500px -350px orange,
+    600px -100px cyan,
+    700px -200px magenta,
+    800px -300px lightgreen,
+    900px -400px red;
+  animation: fallStars 4s linear infinite;
+  z-index: 0;
   pointer-events: none;
+  filter: drop-shadow(0 0 6px currentColor); /* glow */
 }
 
-/* Sparks */
-.firework span {
-  position: absolute;
-  width: 4px;
-  height: 15px;
-  background: red;
-  top: 50%;
-  left: 50%;
-  transform-origin: center bottom;
-  animation: spark 1.2s ease-out infinite;
-  opacity: 0;
-}
-
-/* 10 sparks in different directions */
-.firework span:nth-child(1) { transform: rotate(0deg);   background: red; }
-.firework span:nth-child(2) { transform: rotate(36deg);  background: yellow; }
-.firework span:nth-child(3) { transform: rotate(72deg);  background: lime; }
-.firework span:nth-child(4) { transform: rotate(108deg); background: cyan; }
-.firework span:nth-child(5) { transform: rotate(144deg); background: blue; }
-.firework span:nth-child(6) { transform: rotate(180deg); background: magenta; }
-.firework span:nth-child(7) { transform: rotate(216deg); background: orange; }
-.firework span:nth-child(8) { transform: rotate(252deg); background: pink; }
-.firework span:nth-child(9) { transform: rotate(288deg); background: violet; }
-.firework span:nth-child(10){ transform: rotate(324deg); background: gold; }
-
-/* Explosion glow */
-@keyframes explode {
-  0%   { transform: translate(-50%, -50%) scale(0.5); opacity: 1; }
-  100% { transform: translate(-50%, -50%) scale(1.5); opacity: 0; }
-}
-
-/* Sparks flying out */
-@keyframes spark {
-  0%   { transform: scaleY(0) translateY(0); opacity: 1; }
-  100% { transform: scaleY(1) translateY(-80px); opacity: 0; }
+@keyframes fallStars {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(70vh) scale(1.6);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 0;
+  }
 }
 .home-img{
     
@@ -1514,6 +1504,7 @@ section {
     padding:2rem 4%;
   }
 }
+
 
 
 
