@@ -160,7 +160,29 @@ section{
         opacity:0;
     }
 }
+/* Crescent Moon */
+.moon {
+  position: fixed;
+  top: 50px;
+  right: 80px;
+  width: 100px;
+  height: 100px;
+  background: #fff;              /* white moon */
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(255, 255, 200, 0.8); /* glow */
+  overflow: hidden;
+}
 
+.moon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 25px; /* adjust this for thickness of crescent */
+  width: 100px;
+  height: 100px;
+  background: black;  /* same as background sky */
+  border-radius: 50%;
+}
 
 .home-content p{
     font-size: 1.5rem;
@@ -1502,6 +1524,7 @@ section {
     padding:2rem 4%;
   }
 }
+
 
 
 
