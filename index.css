@@ -11,10 +11,10 @@
 }
 
 :root{
-    --bg-color: #081b29;
-    --second-bg-color:#112e42;
-    --text-color: #ededed;
-    --main-color: #00abf0;
+    --bg-color: #050505ff;
+    --second-bg-color:#5a5958;
+    --text-color: #f5f4f5ff;
+    --main-color: #fff7eaff;
 }
 
 html{
@@ -258,7 +258,7 @@ section{
     border:.2rem solid var(--bg-color);
 }
 
-.home-sci a::before{
+.home-sci a::befor{
     content:'';
     position:absolute;
     top:0;
@@ -1315,7 +1315,7 @@ section {
         width:100%;
         padding:1rem 4%;
         background:var(--bg-color);
-        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+        box-shadow: 0 0.5rem 1rem rgba(252, 8, 8, 0.8);
         transition:.25s ease;
         transition-delay:.25s;
         border:.2rem solid var(--main-color);
