@@ -75,13 +75,6 @@ header nav a.active{
     display: none;
 
 
-}
-#btn {
-  display: block;       /* makes it a block element */
-  margin: 20px auto;    /* centers horizontally */
-  text-align: center;   /* centers text inside */
-  width: fit-content;   /* button fits its text */
-}
 
 section{
     min-height:100vh;
@@ -1454,4 +1447,5 @@ section {
     padding:2rem 4%;
   }
 }
+
 
