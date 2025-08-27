@@ -364,7 +364,7 @@ section{
     border:0.7rem solid var(--bg-color);
     opacity: 0.9;
 }
-.about-img .circle-spin{
+.home-img .circle-spin{
     position:absolute;
     top:50%;
     left:50%;
@@ -1524,6 +1524,7 @@ section {
     padding:2rem 4%;
   }
 }
+
 
 
 
