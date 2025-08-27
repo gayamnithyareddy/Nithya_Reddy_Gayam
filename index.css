@@ -273,61 +273,55 @@ section{
     width:100%;
 
 }
-/* Fireworks Effect */
+/* 🎆 Fireworks Sparks Effect */
 .firework {
   position: absolute;
+  top: 50%;
+  left: 50%;
   width: 5px;
   height: 5px;
   background: transparent;
   border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  animation: explode 1s ease-out infinite;
+  transform: translate(-50%, -50%);
+  animation: explode 1.2s ease-out infinite;
   pointer-events: none;
 }
 
-.firework::before,
-.firework::after {
-  content: "";
+/* Sparks */
+.firework span {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  animation: burst 1s ease-out infinite;
+  width: 4px;
+  height: 15px;
+  background: red;
+  top: 50%;
+  left: 50%;
+  transform-origin: center bottom;
+  animation: spark 1.2s ease-out infinite;
+  opacity: 0;
 }
 
-.firework::before {
-  border-color: red;
-}
+/* 10 sparks in different directions */
+.firework span:nth-child(1) { transform: rotate(0deg);   background: red; }
+.firework span:nth-child(2) { transform: rotate(36deg);  background: yellow; }
+.firework span:nth-child(3) { transform: rotate(72deg);  background: lime; }
+.firework span:nth-child(4) { transform: rotate(108deg); background: cyan; }
+.firework span:nth-child(5) { transform: rotate(144deg); background: blue; }
+.firework span:nth-child(6) { transform: rotate(180deg); background: magenta; }
+.firework span:nth-child(7) { transform: rotate(216deg); background: orange; }
+.firework span:nth-child(8) { transform: rotate(252deg); background: pink; }
+.firework span:nth-child(9) { transform: rotate(288deg); background: violet; }
+.firework span:nth-child(10){ transform: rotate(324deg); background: gold; }
 
-.firework::after {
-  border-color: yellow;
-  animation-delay: 0.2s;
-}
-
-/* Explosion animation */
+/* Explosion glow */
 @keyframes explode {
-  0% {
-    transform: scale(0.5);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(3);
-    opacity: 0;
-  }
+  0%   { transform: translate(-50%, -50%) scale(0.5); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(1.5); opacity: 0; }
 }
 
-/* Circular burst */
-@keyframes burst {
-  0% {
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
+/* Sparks flying out */
+@keyframes spark {
+  0%   { transform: scaleY(0) translateY(0); opacity: 1; }
+  100% { transform: scaleY(1) translateY(-80px); opacity: 0; }
 }
 .home-img{
     
@@ -1520,6 +1514,7 @@ section {
     padding:2rem 4%;
   }
 }
+
 
 
 
