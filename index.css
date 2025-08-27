@@ -160,28 +160,16 @@ section{
         opacity:0;
     }
 }
-/* Crescent Moon */
+/* Full Moon */
 .moon {
   position: fixed;
-  top: 50px;
-  right: 80px;
-  width: 100px;
-  height: 100px;
-  background: #fff;              /* white moon */
+  top: 40px;         /* vertical position */
+  right: 40px;       /* horizontal position */
+  width: 80px;       /* moon size */
+  height: 80px;
+  background: radial-gradient(circle at 30% 30%, #fff, #f0f0f0, #dcdcdc); /* shaded look */
   border-radius: 50%;
-  box-shadow: 0 0 30px rgba(255, 255, 200, 0.8); /* glow */
-  overflow: hidden;
-}
-
-.moon::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 25px; /* adjust this for thickness of crescent */
-  width: 100px;
-  height: 100px;
-  background: black;  /* same as background sky */
-  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(255, 255, 200, 0.9); /* bright glow */
 }
 
 .home-content p{
@@ -1524,6 +1512,7 @@ section {
     padding:2rem 4%;
   }
 }
+
 
 
 
