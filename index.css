@@ -75,6 +75,8 @@ header nav a.active{
     display: none;
 
 
+}
+
 
 section{
     min-height:100vh;
@@ -1447,5 +1449,3 @@ section {
     padding:2rem 4%;
   }
 }
-
-
