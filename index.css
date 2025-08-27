@@ -273,44 +273,42 @@ section{
     width:100%;
 
 }
-/* Falling Colourful Stars Effect */
-.stars {
+/* Rainfall Effect */
+.rain {
   position: fixed;
   top: 0;
   left: 0;
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  background: white;
+  width: 2px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  animation: fall 0.7s linear infinite;
   box-shadow: 
-    50px -100px gold,
-    120px -200px deepskyblue,
-    200px -300px violet,
-    300px -150px lime,
-    400px -250px hotpink,
-    500px -350px orange,
-    600px -100px cyan,
-    700px -200px magenta,
-    800px -300px lightgreen,
-    900px -400px red;
-  animation: fallStars 4s linear infinite;
-  z-index: 0;
+    20px -100px rgba(255,255,255,0.5),
+    60px -150px rgba(255,255,255,0.5),
+    120px -200px rgba(255,255,255,0.6),
+    180px -250px rgba(255,255,255,0.4),
+    240px -300px rgba(255,255,255,0.7),
+    300px -350px rgba(255,255,255,0.5),
+    360px -400px rgba(255,255,255,0.6),
+    420px -450px rgba(255,255,255,0.4),
+    480px -500px rgba(255,255,255,0.7),
+    540px -550px rgba(255,255,255,0.5),
+    600px -600px rgba(255,255,255,0.6),
+    660px -650px rgba(255,255,255,0.7),
+    720px -700px rgba(255,255,255,0.5),
+    780px -750px rgba(255,255,255,0.6),
+    840px -800px rgba(255,255,255,0.4),
+    900px -850px rgba(255,255,255,0.7);
+  z-index: 0; /* keep behind content */
   pointer-events: none;
-  filter: drop-shadow(0 0 6px currentColor); /* glow */
 }
 
-@keyframes fallStars {
+@keyframes fall {
   0% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-  }
-  70% {
-    transform: translateY(70vh) scale(1.6);
-    opacity: 0.9;
+    transform: translateY(0);
   }
   100% {
-    transform: translateY(100vh) scale(0.5);
-    opacity: 0;
+    transform: translateY(100vh);
   }
 }
 .home-img{
@@ -1504,6 +1502,7 @@ section {
     padding:2rem 4%;
   }
 }
+
 
 
 
