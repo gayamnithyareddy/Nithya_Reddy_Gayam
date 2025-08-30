@@ -26,64 +26,7 @@ body{
     background:var(--bg-color);
     color:var(--text-color);
 }
-/* Body */
-body {
-  margin: 0;
-  height: 100vh;
-  background: #000; /* night sky */
-  overflow: hidden;
-  position: relative;
-}
 
-/* Stars */
-.star {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background: #fff;
-  border-radius: 50%;
-  opacity: 0.8;
-  animation: twinkle 2s infinite alternate;
-}
-
-@keyframes twinkle {
-  0% { opacity: 0.2; }
-  50% { opacity: 1; }
-  100% { opacity: 0.2; }
-}
-
-/* Sparks */
-.spark {
-  position: absolute;
-  width: 2px;
-  background: #0ff;
-  opacity: 0;
-  animation: sparkAnim linear infinite;
-}
-
-@keyframes sparkAnim {
-  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
-  50% { transform: translateY(300px) rotate(20deg); opacity: 0.3; }
-  100% { transform: translateY(0) rotate(-20deg); opacity: 0; }
-}
-
-/* Lightning flash */
-.flash {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #0ff;
-  opacity: 0;
-  pointer-events: none;
-  animation: flashAnim 2s infinite;
-}
-
-@keyframes flashAnim {
-  0%, 90%, 100% { opacity: 0; }
-  95% { opacity: 0.5; }
-}
     position: fixed;
     top: 0;
     left: 0;
@@ -1554,6 +1497,7 @@ section {
     padding:2rem 4%;
   }
 }
+
 
 
 
