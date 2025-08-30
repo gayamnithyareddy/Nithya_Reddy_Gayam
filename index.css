@@ -81,7 +81,38 @@ section{
     min-height:100vh;
     padding:10rem 9% 2rem;
 }
+/* Background container */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #0a0a0a, #1a1a1a); /* sky effect */
+}
 
+/* Cloud container */
+.clouds {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: url('https://i.ibb.co/8r3D1xK/clouds.png'); /* cloud image */
+  background-repeat: repeat-x;
+  background-size: contain;
+  animation: moveClouds 60s linear infinite;
+  opacity: 0.4; /* soft look */
+  z-index: -1; /* keep behind content */
+}
+
+/* Animation */
+@keyframes moveClouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .home{
     display:flex;
     align-items:center;
@@ -1497,6 +1528,7 @@ section {
     padding:2rem 4%;
   }
 }
+
 
 
 
