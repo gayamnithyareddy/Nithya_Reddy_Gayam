@@ -81,7 +81,6 @@ body {
 .spark:nth-child(8) { left: 75%; height: 70px; animation-duration: 0.7s; animation-delay: 2.1s; }
 .spark:nth-child(9) { left: 85%; height: 50px; animation-duration: 0.5s; animation-delay: 2.4s; }
 .spark:nth-child(10){ left: 95%; height: 80px; animation-duration: 0.8s; animation-delay: 2.7s; }
-.header{
     position: fixed;
     top: 0;
     left: 0;
@@ -1552,6 +1551,7 @@ section {
     padding:2rem 4%;
   }
 }
+
 
 
 
