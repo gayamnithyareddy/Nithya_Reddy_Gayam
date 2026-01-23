@@ -16,7 +16,6 @@
     --text-color: rgb(255, 255, 255);
     --main-color: rgb(227, 37, 244);
 }
-
 html{
     font-size: 65.5%;
     overflow-x: hidden;
@@ -1497,6 +1496,7 @@ section {
     padding:2rem 4%;
   }
 }
+
 
 
 
