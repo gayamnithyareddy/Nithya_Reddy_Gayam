@@ -12,7 +12,7 @@
 
 :root{
     --bg-color: rgb(10, 1, 50);
-    --second-bg-color:#063793;
+    --second-bg-color:#ffffff;
     --text-color: rgb(48, 1, 48);
     --main-color: rgb(252, 234, 253);
 }
@@ -1497,5 +1497,6 @@ section {
     padding:2rem 4%;
   }
 }
+
 
 
