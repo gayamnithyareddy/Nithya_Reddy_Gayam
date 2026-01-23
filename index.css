@@ -11,8 +11,8 @@
 }
 
 :root{
-    --bg-color: #050505ff;
-    --second-bg-color:#5a5958;
+    --bg-color: rgb(11, 4, 47);
+    --second-bg-color:#0e3988;
     --text-color: #f5f4f5ff;
     --main-color: #fff7eaff;
 }
@@ -86,7 +86,7 @@ section{
     display:flex;
     align-items:center;
     padding: 0 9%;
-    
+   
 }
 
 .home-content{
@@ -169,7 +169,7 @@ section{
   height: 80px;
   background: radial-gradient(circle at 30% 30%, #fff, #f0f0f0, #dcdcdc); /* shaded look */
   border-radius: 50%;
-  box-shadow: 0 0 40px rgba(255, 255, 200, 0.9); /* bright glow */
+  box-shadow: 0 0 40px rgba(165, 3, 109, 0.9); /* bright glow */
 }
 
 .home-content p{
@@ -277,7 +277,7 @@ section{
     height:100%;
     background:var(--main-color);
     z-index:-1;
-    
+   
 }
 .home-sci a:hover::before{
     width:100%;
@@ -292,7 +292,7 @@ section{
   height: 20px;
   background: rgba(255, 255, 255, 0.6);
   animation: fall 0.7s linear infinite;
-  box-shadow: 
+  box-shadow:
     20px -100px rgba(255,255,255,0.5),
     60px -150px rgba(255,255,255,0.5),
     120px -200px rgba(255,255,255,0.6),
@@ -322,7 +322,7 @@ section{
   }
 }
 .home-img{
-    
+   
     height:500px;
     width:100%;
     margin-top:30px;
@@ -443,7 +443,7 @@ section{
 
 .btn-box.btns a::before{
     background: var(--second-bg-color);
-} 
+}
 
 
 .education{  
@@ -464,7 +464,7 @@ section{
     align-items:center;
     flex-direction:column;
     padding-bottom:5rem;
-    
+   
 
 }
 
@@ -472,7 +472,7 @@ section{
     display:flex;
     flex-wrap:wrap;
     gap:5rem;
-    
+   
 }
 
 .education-row .education-column{
@@ -596,9 +596,9 @@ section{
     align-items: center;
     justify-content: center;
     gap:3rem;
-    
+   
 
-    
+   
 }
 
 .skills .skills-row .overview-skills{
@@ -626,7 +626,7 @@ section{
     align-items: center;
     overflow:hidden;
     z-index:1;
-    
+   
 
 }
 .skills-row .overview-skills .skills-content::before{
@@ -662,7 +662,7 @@ section{
     flex-wrap:wrap;
     justify-content:center;
     gap:6rem;
-    
+   
 }
 
 .skills-content .skills-column .programming2{
@@ -714,7 +714,7 @@ i{
     100%{
         transform:scaleX(1);
     }
-    
+   
 }
 
 .skills-content .skills-column .programming2 .bar .progressline span{
@@ -837,7 +837,7 @@ i{
     height:11rem;
     width:11rem;
     border-radius:50%;
-  
+ 
 }
 
 .outer{
@@ -892,7 +892,7 @@ i{
     100%{
         stroke-dashoffset:86.5;
     }
-    
+   
 }
 .progress-bar-java{
     fill:none;
@@ -909,7 +909,7 @@ i{
     100%{
         stroke-dashoffset:56.5;
     }
-    
+   
 }
 .progress-bar-python{
     fill:none;
@@ -926,7 +926,7 @@ i{
     100%{
         stroke-dashoffset:66.5;
     }
-    
+   
 }
 .progress-bar-js{
     fill:none;
@@ -943,7 +943,7 @@ i{
     100%{
         stroke-dashoffset:96.5;
     }
-    
+   
 }
 .progress-bar-dsa{
     fill:none;
@@ -960,7 +960,7 @@ i{
     100%{
         stroke-dashoffset:36.5;
     }
-    
+   
 }
 
 svg{
@@ -1010,7 +1010,7 @@ svg{
     height:3rem;
     padding-top:0.4rem;
 
-} 
+}
 
 .contact .heading{
     font-size:5rem;
@@ -1083,7 +1083,7 @@ svg{
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
-    
+   
 }
 
 .btnn-box{
@@ -1232,7 +1232,7 @@ footer .footer-icontap a i{
 }
 
 .projects .projects-box{
-    
+   
     height:auto;
     width:100%;
     margin-bottom:5rem;
@@ -1274,7 +1274,7 @@ footer .footer-icontap a i{
 .projects .projects-box .projects-column .project img{
      height:37rem;
     width:57rem;  
-    opacity:0.9; 
+    opacity:0.9;
     display:block;
 }
 .projects .projects-box .projects-column .project img:hover{
@@ -1328,7 +1328,7 @@ footer .footer-icontap a i{
   right:124px;
 }
 
-.bottom-right{ 
+.bottom-right{
    bottom: 10px;
    right:10px;
 }
@@ -1389,7 +1389,7 @@ section {
     .home {
     flex-direction: column;
     padding:5%;
-    padding-top:15rem; 
+    padding-top:15rem;
 
 }
    section{
@@ -1418,7 +1418,7 @@ section {
   .home-sci{
     left:2rem;
     bottom:2.5rem;
-    
+   
   }
   .skills .skills-row {
     flex-direction: column;
@@ -1461,7 +1461,7 @@ section {
 .home-content p {
   font-size: 1.4rem;
 }
-  
+ 
 
 }
 
@@ -1492,27 +1492,8 @@ section {
   }
   section{
     padding:10rem 4% 2rem;
-  } 
+  }
   footer{
     padding:2rem 4%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
