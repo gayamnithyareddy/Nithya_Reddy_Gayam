@@ -11,12 +11,11 @@
 }
 
 :root{
-    --bg-color: rgb(10, 1, 50);
-    --second-bg-color:#ffffff;
-    --text-color: rgb(31, 14, 144);
-    --main-color: rgb(162, 45, 147);
+    --bg-color: rgb(247, 247, 248);
+    --second-bg-color:#c0a2dc;
+    --text-color: rgb(13, 7, 52);
+    --main-color: rgb(56, 5, 49);
 }
-
 
 html{
     font-size: 65.5%;
@@ -1498,6 +1497,7 @@ section {
     padding:2rem 4%;
   }
 }
+
 
 
 
