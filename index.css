@@ -13,8 +13,8 @@
 :root{
     --bg-color: rgb(85, 23, 98);
     --second-bg-color:#c0a2dc;
-    --text-color: rgb(79, 10, 85);
-    --main-color: rgb(255, 255, 255);
+    --text-color: rgb(255, 255, 255);
+    --main-color: rgb(40, 4, 39);
 }
 
 html{
@@ -1497,6 +1497,7 @@ section {
     padding:2rem 4%;
   }
 }
+
 
 
 
